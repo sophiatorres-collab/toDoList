@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+<body class="body">
+    <header class="header">
+        <img src="./assets/img/logo.png" alt="Logo ToDo List" class="img_logo">
+    </header>
+    <main class="main">
+        <section>
+            <form class="formCadastroTarefa" id="formCadastroTarefa">
+                <input type="text"required minlength="2" placeholder="Adicione uma nova tarefa" name="tarefa">
+                <button type="submit"> Criar <img src="./assets/img/adicionar.png" alt="Icone de Criar Tarefa"></button> 
+            </form>
+        </section>
+
+        <section class="modo">
+            <!-- Display Flex /  -->
+             <div><p> Tarefas criadas</p> 
+                <span  class="numCriadas" id="numTarefas">12</span></div>
+
+            <div ><p>Concluídas</p>
+                <span class="numConcluidas" id="numConcluidas">10</span></div>
+
+            <div><input type="text" id="inputBusca" placeholder="Busque por Tarefas"></div>
+        </section>
+        <!-- Uma classe -->
+        <section class ="semTarefas" id="semTarefas">
+                <img src="./assets/img/icone-sem-tarefa.png" alt="Icone quando não possui tarefas">
+                <h3> Você ainda não tem tarefas cadastradas</h3>
+                <p> Crie tarefas e organize seus itens a fazer</p>
+        </section>
+        <!-- Outra classe - buttom border radius 100% - background color - icone -->
+        <section id="listaTarefas">
+
+        </section>
+    </main>
+    <script src="assets/js/app.js"></script>
+</body>
+</html> 
